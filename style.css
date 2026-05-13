@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #111;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Navbar */
+header {
+  background: #1f1f1f;
+  padding: 15px 50px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #00adb5;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00adb5;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to right, #000, #222);
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero span {
+  color: #00adb5;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #00adb5;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #02848a;
+}
+
+/* Sections */
+section {
+  padding: 100px 50px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #00adb5;
+}
+
+/* About */
+.about p {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+/* Skills */
+.skill-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skill {
+  background: #1f1f1f;
+  padding: 15px 25px;
+  border-radius: 5px;
+}
+
+/* Projects */
+.project-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  background: #1f1f1f;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Contact */
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  background: #00adb5;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #02848a;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1f1f1f;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    margin-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
